@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+  background-color: bisque;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px;
+}
+
+h2 {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: blueviolet;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  margin: 0 auto 20px;
+}
+
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* Tab Bar Styling */
+.tab-bar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tab {
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+background-color: #575757;
+border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Content Styling */
+.content-type-class {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Each block takes 50% of the width */
+  background-color: rgb(246, 192, 111);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.content-title {
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.content-block {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}

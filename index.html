@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="block08.js"></script>
+  <title>Personal Site</title>
+</head>
+<body>
+  <header>
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar').innerHTML = html;
+        });
+    </script>
+    <script src="javascript.js"></script>
+    <h1>Jamie Selects</h1>
+  </header>
+  <img src="Jamie_photo.jpeg" alt="">
+  
+</body>
+</html>
