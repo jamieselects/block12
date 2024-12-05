@@ -1,11 +1,18 @@
 /* General Styling */
 body {
-  background-color: bisque;
+  background: linear-gradient(to right, #e77e0eac, #c06f1fd6);
+  color: white; /* Text contrasts with the background */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 60px; /* Adjust this value based on the height of your navigation bar */
 }
 
 h1 {
   font-family: 'Courier New', Courier, monospace;
-  margin: 10px;
+  margin: 1%;
 }
 
 h2 {
@@ -28,7 +35,7 @@ h3 {
   font-size: 18px;
   padding: 10px;
   color: white;
-  margin: 0 auto 20px;
+  margin: 1%
 }
 
 h4 {
@@ -36,15 +43,28 @@ h4 {
   text-align: center;
 }
 
+p {
+  margin: 1.5%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 /* Tab Bar Styling */
 .tab-bar {
   background-color: #333;
   position: fixed;
+  z-index: 1000;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tab-home {
+  display: inline-block;
+  margin-right: auto;
+  background-color: #333;
+  justify-content: left;
 }
 
 .tabs {
@@ -74,7 +94,47 @@ border-radius: 5px;
   border-radius: 5px;
 }
 
-/* Content Styling */
+/* Banner image styling */
+.banner-image {
+  display: flex;
+  margin: 1%;
+}
+
+/* Form box styling */
+
+.form-box {
+  background-color: rgb(162, 159, 159);
+  display: grid;
+  gap: 10px; /* Space between elements */
+  padding: 2%;
+  margin: 5%;
+  max-width: 400px; /* Set a maximum width for better readability */
+}
+
+label {
+  text-align: left;
+  padding-left: 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+input, textarea {
+  width: 98%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  background-color: white;
+  padding: 2%;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(179, 166, 245);
+}
+
+/* Portfolio Content Styling */
+
 .content-type-class {
   display: block;
   margin-bottom: 20px;
@@ -91,8 +151,13 @@ border-radius: 5px;
   box-sizing: border-box;
 }
 
+iframe {
+  width: 100%; /* Ensures the iframe fits its container */
+}
+
 .content-row {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   justify-content: space-between;
 }
@@ -112,4 +177,24 @@ border-radius: 5px;
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column; /* Stack containers vertically */
+    gap: 10px; /* Reduce the gap between rows */
+  }
+
+  .content-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  iframe {
+    height: auto; /* Allow height to adjust dynamically */
+    min-height: 120px; /* Ensure a minimum height for visibility */
+  }
+
+  .banner-image {
+    width: 98%;
+  }
 }

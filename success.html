@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Success</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      
       <div id="navbar"></div>
       <script>
         fetch('navbar.html')
@@ -16,15 +17,18 @@
             document.getElementById('navbar').innerHTML = html;
           });
       </script>
+      <script>
+        setTimeout(() => {
+          window.location.href = window.location.origin;
+        }, 5000); // Redirect to the home page after 5 seconds
+      </script>
+      
       
     </header>
-    <h1>Jamie Selects</h1>
+    <h1>Thanks!</h1>
       <section class="section-class">
-        <h3>About Me</h3>
         <p>
-          Hi! I'm Jamie. I currently live in Long Island City, NY. I work at
-          Cash App as a Technial Program Manager. I am excited for the bootcamp
-          to be able to build my own product ideas.
+          You've successfully submitted your form. 
         </p>
       </section>
   </body>
