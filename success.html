@@ -8,28 +8,19 @@
   </head>
   <body>
     <header>
-      
       <div id="navbar"></div>
       <script>
-        fetch('navbar.html')
-          .then(response => response.text())
-          .then(html => {
-            document.getElementById('navbar').innerHTML = html;
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("navbar").innerHTML = html;
           });
       </script>
-      <script>
-        setTimeout(() => {
-          window.location.href = window.location.origin;
-        }, 5000); // Redirect to the home page after 5 seconds
-      </script>
-      
-      
+      <script src="success.js"></script>
     </header>
     <h1>Thanks!</h1>
-      <section class="section-class">
-        <p>
-          You've successfully submitted your form. 
-        </p>
-      </section>
+    <section class="section-class">
+      <p>You've successfully submitted your form.</p>
+    </section>
   </body>
 </html>
