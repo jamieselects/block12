@@ -97,6 +97,7 @@ border-radius: 5px;
 /* Banner image styling */
 .banner-image {
   display: flex;
+  width: 98%;
   margin: 1%;
 }
 
