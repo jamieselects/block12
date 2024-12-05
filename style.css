@@ -199,3 +199,23 @@ iframe {
     width: 98%;
   }
 }
+
+@media (min-width: 768px) {
+  .content-row {
+    flex-direction: row; /* Stack containers next to each other */
+    gap: 10px; /* Reduce the gap between rows */
+  }
+
+  .content-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  iframe {
+    height: auto; /* Allow height to adjust dynamically */
+    min-height: 120px; /* Ensure a minimum height for visibility */
+  }
+
+  .banner-image {
+    width: 98%;
+  }
+}
